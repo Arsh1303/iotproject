@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart IoT Lighting System</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Smart IoT Lighting System</a>
+        <a class="navbar-brand" href="graph.html">Graph</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Add Lights Form -->
+        <div class="mb-3">
+            <label for="lightName">Light Name:</label>
+            <input type="text" class="form-control" id="lightName" placeholder="Enter light name">
+            <label for="colorPicker">Select Color:</label>
+            <input type="color" class="form-control" id="colorPicker">
+            <label for="brightnessSlider">Brightness:</label>
+            <input type="range" class="form-control-range" id="brightnessSlider" min="0" max="100" value="50">
+            <button class="btn btn-primary mt-2" onclick="addLight()">Add Light</button>
+        </div>
+
+        <!-- Lights Container -->
+        <div id="lightsContainer" class="card-deck"></div>
+
+        <!-- Light Status Display (removed from here) -->
+    </div>
+
+    <!-- (scripts remain the same) -->
+
+
+    <!-- Bootstrap JS scripts (jQuery and Popper.js required) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
